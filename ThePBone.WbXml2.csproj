@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <RootNamespace>ThePBone.WbXml2</RootNamespace>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Authors>Tim Schneeberger (thepbone)</Authors>
+        <Description>This library is a managed wrapper around libwbxml (aka libwbxml2) available at: https://github.com/libwbxml/libwbxml
+
+This library includes a precompiled version of the C++ library for Windows. For macOS and Linux, you need to bring your own compiled binary files. Name the binary libwbxml2.so (Linux) or libwbxml2.dylib (macOS) and bundle it within the working directory of your application or in a directory specified in the global PATH system environment variable.</Description>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+        <Copyright>Copyright (c) 2021 Tim Schneeberger</Copyright>
+        <PackageProjectUrl>https://github.com/thepbone/ThePBone.WbXml2</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/thepbone/ThePBone.WbXml2</RepositoryUrl>
+    </PropertyGroup>
+
+    <Import Project="Native/Native.targets" />
+</Project>
